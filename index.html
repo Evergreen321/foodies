@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/icon.png" />
+
+    <!-- Material Icon CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Foodies</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="f-container">
+        <div class="header-box">
+          <nav class="main-nav">
+            <a href="#" class="f-logo">Foodies</a>
+            <ul class="main-nav-list">
+              <li>
+                <a href="#" class="main-nav-link">Home</a>
+              </li>
+              <li>
+                <a href="#" class="main-nav-link">About us</a>
+              </li>
+              <li>
+                <a href="#" class="main-nav-link">Service Us</a>
+              </li>
+              <li>
+                <a href="#" class="main-nav-link">Our Company</a>
+              </li>
+              <li>
+                <a href="#" class="main-nav-link">More</a>
+              </li>
+            </ul>
+            <button class="hamburger">
+              <!-- material icons https://material.io/resources/icons/ -->
+              <i class="menuIcon material-icons">menu</i>
+              <i class="closeIcon material-icons">close</i>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <section>
+        <div class="hero-section">
+          <div class="f-container">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-7 hero-box">
+                  <div class="hero-header">
+                    <h1 class="hero-title">We're serious for food.</h1>
+                    <p class="hero-text">
+                      We strive to provide a space where guests can connect with
+                      themselves and explore their full potential, offering a
+                      safe place.
+                    </p>
+                    <!-- <a href="#" class="f-btn f-btn--mob">
+                      Get started &#8680;
+                    </a> -->
+
+                    <button
+                      type="button"
+                      class="btn f-btn"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    >
+                      Get started &#8680;
+                    </button>
+
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="exampleModalCenter"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="exampleModalCenterTitle"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-dialog-centered"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">
+                              Get started
+                            </h5>
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <form class="form-cta-modal">
+                              <div class="">
+                                <input
+                                  id="email"
+                                  type="email"
+                                  placeholder="Email"
+                                  name="email"
+                                  class="email-input-modal"
+                                />
+                              </div>
+                              <div class="btn-subscribe">
+                                <button
+                                  class="f-btn f-btn-footer btn-success-submit"
+                                  type="submit"
+                                >
+                                  Subscribe
+                                </button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="logos-list">
+                    <img src="img/logo_1.jpg" alt="..." />
+                    <img src="img/logo_2.jpg" alt="..." />
+                    <img src="img/logo_3.jpg" alt="..." />
+                  </div>
+                </div>
+                <div class="col-sm-5">
+                  <div class="hero-img-box">
+                    <img
+                      class="img-fluid hero-img"
+                      src="img/hero.jpg"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <!-- <div class="logos-list">
+                  <img src="img/logo_1.jpg" alt="..." />
+                  <img src="img/logo_2.jpg" alt="..." />
+                  <img src="img/logo_3.jpg" alt="..." />
+                </div> -->
+              </div>
+            </div>
+
+            <div class="container options-box">
+              <div class="row options-list">
+                <div class="col-6 col-sm-3 option-item">
+                  <i class="fas fa-truck fa-lg option-icon"></i>
+                  <div class="option-body">
+                    <h6 class="option-title">Free shipping</h6>
+                    <h6 class="option-desc">Orders over $140</h6>
+                  </div>
+                </div>
+
+                <div class="col-6 col-sm-3 option-item">
+                  <i class="fas fa-wallet fa-lg option-icon"></i>
+                  <div class="option-body">
+                    <h6 class="option-title">Quick payment</h6>
+                    <h6 class="option-desc">100% secure payment</h6>
+                  </div>
+                </div>
+
+                <div class="col-6 col-sm-3 option-item">
+                  <i class="fas fa-percent fa-lg option-icon"></i>
+                  <div class="option-body">
+                    <h6 class="option-title">Special promo</h6>
+                    <h6 class="option-desc">Get special promo</h6>
+                  </div>
+                </div>
+
+                <div class="col-6 col-sm-3 option-item">
+                  <i class="fas fa-headphones fa-lg option-icon"></i>
+                  <div class="option-body">
+                    <p class="option-title">24/7 support</p>
+                    <p class="option-desc">Ready support</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="our-benefit-section">
+          <div class="f-container">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-sm-6 section-picture">
+                  <img
+                    class="section-img"
+                    src="img/our_benefit.jpg"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-12 col-sm-6 align-self-end">
+                  <div class="benefit-header">
+                    <h2 class="benefit-header-name">Our benefit</h2>
+                    <h3 class="benefit-header-title">
+                      The more healthy food the better
+                    </h3>
+                  </div>
+                  <ul class="benefit-list">
+                    <li class="benefit-item">
+                      <i class="fas fa-check fa-lg check-icon"></i>Be alive with
+                      veggie food
+                    </li>
+                    <li class="benefit-item">
+                      <i class="fas fa-check fa-lg check-icon"></i>It's the
+                      place to be
+                    </li>
+                    <li class="benefit-item">
+                      <i class="fas fa-check fa-lg check-icon"></i>Nonstop
+                      Veggie Food
+                    </li>
+                    <li class="benefit-item">
+                      <i class="fas fa-check fa-lg check-icon"></i>The best silk
+                      dish in town
+                    </li>
+                    <li class="benefit-item">
+                      <i class="fas fa-check fa-lg check-icon"></i>Truffles, Egg
+                      & pumpkin spice
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="our-stars-section">
+          <div class="f-container">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 order-2 col-sm-6 order-sm-1 align-self-end">
+                  <div class="our-stars-header">
+                    <h2 class="our-stars-header-name">Our stars</h2>
+                    <h3 class="our-stars-header-title">
+                      Veggie food goes on and always on
+                    </h3>
+                  </div>
+
+                  <div class="row st">
+                    <div class="col-sm-4 col-12 stat-box stat-value-center">
+                      <span class="stat-number">1,500</span>
+                      <p class="stat-desc">Sold product</p>
+                    </div>
+                    <div class="col-sm-4 col-12 stat-box stat-value-center">
+                      <span class="stat-number">500</span>
+                      <p class="stat-desc">Positive feedback</p>
+                    </div>
+                    <div class="col-sm-4 col-12 stat-box stat-value-center">
+                      <span class="stat-number">400</span>
+                      <p class="stat-desc">Official store</p>
+                    </div>
+                  </div>
+
+                  <a href="#" class="f-btn f-btn--mob">
+                    Get special promo &#8680;
+                  </a>
+                </div>
+                <div class="col-12 order-1 col-sm-6 order-sm-2 our-stars-img">
+                  <img class="section-img" src="img/our_stars.jpg" alt="..." />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="our-features-section">
+          <div class="f-container">
+            <div class="container">
+              <div class="our-features-header">
+                <h2 class="our-features-header-name">Our features</h2>
+                <h3 class="our-features-header-title">Variety of foods</h3>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-12 col-sm-3 text-center">
+                  <img
+                    class="img-fluid"
+                    width="100%"
+                    height="auto"
+                    class=""
+                    src="img/food_1.jpg"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-12 col-sm-3 p-4 feature-box">
+                  <div class="feature-box-small">
+                    <h4 class="feature-title">Veggies are forever</h4>
+                    <p class="feature-text">We offer the following services</p>
+                    <a href="#" class="feature-btn">Discover now &#8680;</a>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-3 text-center">
+                  <img
+                    class="img-fluid"
+                    width="100%"
+                    height="auto"
+                    src="img/food_3.jpg"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-12 col-sm-3 p-4 feature-box">
+                  <div class="feature-box-small">
+                    <h4 class="feature-title">Good for your skin</h4>
+                    <p class="feature-text">We offer the following services</p>
+                    <a href="#" class="feature-btn">Discover now &#8680;</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-12 order-2 col-sm-3 order-sm-1 p-4 feature-box">
+                  <div class="feature-box-small">
+                    <h4 class="feature-title">Veggie food groove</h4>
+                    <p class="feature-text">We offer the following services</p>
+                    <a href="#" class="feature-btn">Discover now &#8680;</a>
+                  </div>
+                </div>
+                <div class="col-12 order-1 col-sm-3 order-sm-2 text-center">
+                  <img
+                    class="img-fluid"
+                    width="100%"
+                    height="auto"
+                    src="img/food_2.jpg"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-12 order-4 col-sm-3 order-sm-3 p-4 feature-box">
+                  <div class="feature-box-small">
+                    <h4 class="feature-title">That comes close</h4>
+                    <p class="feature-text">We offer the following services</p>
+                    <a href="#" class="feature-btn">Discover now &#8680;</a>
+                  </div>
+                </div>
+                <div class="col-12 order-3 col-sm-3 order-sm-4 text-center">
+                  <img
+                    class="img-fluid"
+                    width="100%"
+                    height="auto"
+                    src="img/food_4.jpg"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="our-product-section">
+          <div class="f-container">
+            <div class="our-product-header">
+              <h2 class="our-product-header-name">Our product</h2>
+              <h3 class="our-product-header-title">Most popular product</h3>
+            </div>
+            <div class="products-box">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-sm-3 f-card-box-item">
+                    <div class="f-card-box">
+                      <div class="f-card-img-big">
+                        <img
+                          class="f-card-img"
+                          src="img/item_1.jpg"
+                          alt="..."
+                        />
+                        <div class="stars">
+                          <i class="fas fa-star fa-lg"></i>
+                          <i class="fas fa-star fa-lg"></i>
+                          <i class="fas fa-star fa-lg"></i>
+                          <i class="fas fa-star fa-lg"></i>
+                          <i class="fas fa-star fa-lg"></i>
+                        </div>
+                      </div>
+                      <h6>Summer Veganie</h6>
+                      <div class="price">
+                        <span class="old-price">$25</span>
+                        <span class="new-price">$29</span>
+                      </div>
+                      <a href="#" class="f-btn-buy">Buy now &#8680;</a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-3 f-card-box-item">
+                    <div class="f-card-box">
+                      <div class="f-card-img-big">
+                        <img
+                          class="f-card-img"
+                          src="img/item_2.jpg"
+                          alt="..."
+                        />
+                        <div class="stars">
+                          <i class="fas fa-star fa-lg"></i>
+                          <i class="fas fa-star fa-lg"></i>
+                          <i class="fas fa-star fa-lg"></i>
+                          <i class="fas fa-star fa-lg"></i>
+                          <i class="fas fa-star fa-lg"></i>
+                        </div>
+                      </div>
+                      <h6>Greanie Seafood</h6>
+                      <div class="price">
+                        <span class="old-price">$25</span>
+                        <span class="new-price">$29</span>
+                      </div>
+                      <a href="#" class="f-btn-buy">Buy now &#8680;</a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-3 f-card-box-item">
+                    <div class="f-card-box">
+                      <div class="f-card-img-big">
+                        <img
+                          class="f-card-img"
+                          src="img/item_3.jpg"
+                          alt="..."
+                        />
+                        <div class="stars">
+                          <i class="fas fa-star fa-lg"></i>
+                          <i class="fas fa-star fa-lg"></i>
+                          <i class="fas fa-star fa-lg"></i>
+                          <i class="fas fa-star fa-lg"></i>
+                          <i class="fas fa-star fa-lg"></i>
+                        </div>
+                      </div>
+                      <h6>Fresh Vegetable</h6>
+                      <div class="price">
+                        <span class="old-price">$25</span>
+                        <span class="new-price">$29</span>
+                      </div>
+                      <a href="#" class="f-btn-buy">Buy now &#8680;</a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-3 f-card-box-item">
+                    <div class="f-card-box">
+                      <div class="f-card-img-big">
+                        <img
+                          class="f-card-img"
+                          src="img/item_4.jpg"
+                          alt="..."
+                        />
+                        <div class="stars">
+                          <i class="fas fa-star fa-lg"></i>
+                          <i class="fas fa-star fa-lg"></i>
+                          <i class="fas fa-star fa-lg"></i>
+                          <i class="fas fa-star fa-lg"></i>
+                          <i class="fas fa-star fa-lg"></i>
+                        </div>
+                      </div>
+                      <h6>Fresh Meatyus</h6>
+                      <div class="price">
+                        <span class="old-price">$25</span>
+                        <span class="new-price">$29</span>
+                      </div>
+                      <a href="#" class="f-btn-buy">Buy now &#8680;</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="banner-section">
+          <div class="f-container">
+            <div class="banner-box">
+              <p class="banner-text">
+                Veggie Foods? Ingredients You Want To Try
+              </p>
+              <!-- MODAL WINDOW WHEN CHOOSING GET STARTED -->
+              <!-- <a href="#" class="f-btn"> Get started &#8680; </a> -->
+              <button
+                type="button"
+                class="btn f-btn"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+              >
+                Get started &#8680;
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModalCenter"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">
+                        Get started
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="form-cta-modal">
+                        <div class="">
+                          <input
+                            id="email"
+                            type="email"
+                            placeholder="Email"
+                            name="email"
+                            class="email-input-modal"
+                          />
+                        </div>
+                        <div class="btn-subscribe">
+                          <button class="f-btn f-btn-footer" type="submit">
+                            Subscribe
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-box">
+        <div class="f-container">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-3 text-sm-left text-center mb-5">
+                <div class="f-logo--footer">
+                  <a href="#" class="f-logo">Foodies</a>
+                </div>
+                <p class="footer-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequatur, provident.
+                </p>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/" target="_blank">
+                    <i
+                      class="fab fa-facebook-f fa-lg social-icon social-icon--facebook"
+                    ></i
+                  ></a>
+                  <a href="https://www.instagram.com/" target="_blank"
+                    ><i
+                      class="fab fa-instagram fa-lg social-icon social-icon--instagram"
+                    ></i
+                  ></a>
+                  <a href="https://twitter.com/" target="_blank"
+                    ><i
+                      class="fab fa-twitter fa-lg social-icon social-icon--twitter"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-9 text-sm-left text-center mb-5">
+                <div class="row">
+                  <div class="col-12 col-sm-3 text-sm-left text-center mb-5">
+                    <nav class="nav-col">
+                      <p class="footer-heading">About us</p>
+                      <ul class="footer-nav">
+                        <li><a class="footer-link" href="#">About us</a></li>
+                        <li><a class="footer-link" href="#">Service us</a></li>
+                        <li><a class="footer-link" href="#">Contact</a></li>
+                        <li><a class="footer-link" href="#">Company</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="col-12 col-sm-3 text-sm-left text-center mb-5">
+                    <nav class="nav-col">
+                      <p class="footer-heading">Company</p>
+                      <ul class="footer-nav">
+                        <li><a class="footer-link" href="#">Partnership</a></li>
+                        <li>
+                          <a class="footer-link" href="#">Terms of use</a>
+                        </li>
+                        <li><a class="footer-link" href="#">Privacy</a></li>
+                        <li><a class="footer-link" href="#">Sitemap</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="col-12 col-sm-6 text-sm-left text-center mb-5">
+                    <p class="footer-heading">Get in touch</p>
+                    <p class="footer-text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequatur, provident.
+                    </p>
+                    <form class="form-cta">
+                      <div class="">
+                        <input
+                          id="email"
+                          type="email"
+                          placeholder="Email"
+                          name="email"
+                          class="email-input"
+                        />
+                      </div>
+                      <div class="">
+                        <!-- <button class="f-btn f-btn-footer">Subscribe</button> -->
+                        <button
+                          type="button"
+                          class="f-btn f-btn-footer f-btn-subscribe"
+                          data-toggle="modal"
+                          data-target=".bd-example-modal-lg"
+                        >
+                          Subscribe
+                        </button>
+
+                        <div
+                          class="modal fade bd-example-modal-lg"
+                          tabindex="-1"
+                          role="dialog"
+                          aria-labelledby="mySmallModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4 class="modal-title" id="mySmallModalLabel">
+                                  Thank you for choosing Foodies!
+                                </h4>
+                                <button
+                                  type="button"
+                                  class="close"
+                                  data-dismiss="modal"
+                                  aria-label="Close"
+                                >
+                                  <span aria-hidden="true">×</span>
+                                </button>
+                              </div>
+
+                              <div class="modal-body">
+                                <p class="msg-success">
+                                  We will start working on your request right
+                                  away. The confirmation email will be sent
+                                  shortly.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="copyright-text"></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
