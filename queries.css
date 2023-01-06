@@ -1,0 +1,222 @@
+@media (max-width: 767.98px) {
+  .f-container {
+    max-width: none;
+    padding: 24px 30px;
+  }
+
+  h1 {
+    font-size: 51px;
+    line-height: 62px;
+    text-align: center;
+  }
+
+  /* HAMBURGER MENU*/
+  .hamburger {
+    display: block;
+    z-index: 9999;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .material-icons {
+    display: block;
+  }
+
+  .menuIcon,
+  .closeIcon {
+    color: #06c167;
+  }
+
+  .closeIcon {
+    /* display: none; */
+  }
+
+  .main-nav-list {
+    justify-content: center;
+    gap: 20px;
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgba(29, 29, 31, 0.541);
+    /* color: white; */
+    list-style: none;
+    padding-top: 4rem;
+  }
+
+  .showMenu {
+    transform: translateY(0);
+  }
+
+  .hero-section {
+    margin-bottom: 60px;
+  }
+
+  .hero-box {
+    padding-bottom: 0px;
+  }
+
+  .hero-header {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+
+  .hero-title {
+    margin-bottom: 25px;
+  }
+
+  .hero-text {
+    font-size: 14px;
+    line-height: 159.4%;
+
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .f-btn {
+    padding: 25px 35px;
+  }
+
+  .logos-list {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .options-box {
+    padding-bottom: 0;
+  }
+
+  .option-item {
+    flex-direction: column;
+    gap: 45px;
+    margin-bottom: 100px;
+  }
+
+  .hero-section,
+  .our-stars-section,
+  .our-benefit-section,
+  .our-features-section,
+  .our-product-section,
+  .banner-section {
+    margin-bottom: 35px;
+  }
+
+  .benefit-header,
+  .our-stars-header,
+  .our-features-header,
+  .our-product-header {
+    margin-bottom: 52px;
+  }
+
+  .benefit-header-name,
+  .our-stars-header-name,
+  .our-features-header-name,
+  .our-product-header-name {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  .benefit-header-title,
+  .our-stars-header-title,
+  .our-features-header-title,
+  .our-product-header-title {
+    font-size: 35px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  .section-picture {
+    margin-bottom: 55px;
+  }
+
+  .benefit-list {
+    text-align: left;
+  }
+
+  .benefit-header {
+    text-align: center;
+  }
+
+  .our-stars-img {
+    margin-bottom: 60px;
+  }
+
+  .section-img {
+    max-width: 215px;
+    max-height: 300px;
+  }
+
+  .feature-title {
+    margin-bottom: 25px;
+  }
+
+  .feature-text {
+    margin-bottom: 35px;
+  }
+
+  .stat-value-center {
+    text-align: center;
+  }
+
+  .f-card-box-item {
+    margin-bottom: 35px;
+  }
+
+  .banner-box {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap: 50px;
+  }
+
+  .banner-text {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .footer-box {
+    margin-top: 90px;
+    margin-bottom: 0px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .form-cta {
+    display: block;
+  }
+
+  .email-input {
+    font-size: 14px;
+    line-height: 17px;
+    height: 54px;
+    margin-bottom: 5px;
+  }
+
+  .email-input:focus {
+    box-shadow: 0 0 0 0.06rem #dfe4f1;
+  }
+
+  .f-btn-footer {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 268px;
+  }
+}
