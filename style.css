@@ -189,6 +189,9 @@ li {
 }
 
 .hero-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 142.4%;
   color: rgba(29, 29, 31, 0.75);
   margin-bottom: 49px;
 }
@@ -224,6 +227,7 @@ li {
   bottom: -20px;
   right: -35px;
 }
+
 /* 
 .hero-img-box::after {
   content: url("img/Ratings.svg");
@@ -458,7 +462,6 @@ li {
 }
 
 /* FOOTER */
-
 .footer-box {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -520,6 +523,10 @@ li {
   gap: 15px;
 }
 
+.form--email-box *:focus {
+  box-shadow: 0 0 0 0.1rem #dfe4f1;
+}
+
 .email-input {
   background-color: #f0f1ec;
   font-weight: 400;
@@ -527,6 +534,10 @@ li {
   line-height: 17px;
   color: rgba(29, 29, 31, 0.51);
   padding: 18px 24px;
+}
+
+.email-input *:focus-visible {
+  box-shadow: 0 0 0 0.1rem #dfe4f1;
 }
 
 .f-btn-footer {
@@ -548,199 +559,4 @@ li {
 
 .social-icon--instagram:hover {
   color: #8a3ab9;
-}
-
-/* media queries */
-@media (max-width: 767.98px) {
-  .f-container {
-    padding: 24px 30px;
-  }
-
-  /* HAMBURGER MENU*/
-  .hamburger {
-    display: block;
-    z-index: 9999;
-  }
-
-  .nav-open .main-nav {
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-    transform: translateX(0);
-  }
-
-  .nav-open .material-icons {
-    display: block;
-  }
-
-  .menuIcon,
-  .closeIcon {
-    color: #06c167;
-  }
-
-  .closeIcon {
-    /* display: none; */
-  }
-
-  .main-nav-list {
-    justify-content: center;
-    gap: 20px;
-    position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.2s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    background: rgba(29, 29, 31, 0.541);
-    /* color: white; */
-    list-style: none;
-    padding-top: 4rem;
-  }
-
-  .showMenu {
-    transform: translateY(0);
-  }
-
-  .hero-section {
-    margin-bottom: 60px;
-  }
-
-  .hero-box {
-    padding-bottom: 0px;
-  }
-
-  .hero-header {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .hero-title {
-    margin-bottom: 25px;
-  }
-
-  .hero-text {
-    margin-bottom: 50px;
-  }
-
-  .f-btn--mob {
-    width: 100%;
-    text-align: center;
-  }
-
-  .logos-list {
-    justify-content: center;
-    gap: 40px;
-  }
-
-  .options-box {
-    padding-bottom: 0;
-  }
-
-  .option-item {
-    flex-direction: column;
-    gap: 45px;
-    margin-bottom: 100px;
-  }
-
-  .hero-section,
-  .our-stars-section,
-  .our-benefit-section,
-  .our-features-section,
-  .our-product-section,
-  .banner-section {
-    margin-bottom: 35px;
-  }
-
-  .benefit-header,
-  .our-stars-header,
-  .our-features-header,
-  .our-product-header {
-    margin-bottom: 52px;
-  }
-
-  .benefit-header-name,
-  .our-stars-header-name,
-  .our-features-header-name,
-  .our-product-header-name {
-    font-size: 15px;
-    line-height: 18px;
-    text-align: center;
-  }
-
-  .benefit-header-title,
-  .our-stars-header-title,
-  .our-features-header-title,
-  .our-product-header-title {
-    font-size: 35px;
-    line-height: 42px;
-    text-align: center;
-  }
-
-  .section-picture {
-    margin-bottom: 55px;
-  }
-
-  .benefit-list {
-    text-align: left;
-  }
-
-  .benefit-header {
-    text-align: center;
-  }
-
-  .our-stars-img {
-    margin-bottom: 60px;
-  }
-  .section-img {
-    position: relative;
-  }
-
-  .section-img::after {
-    /* content: "";
-    display: block;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    right: 0%;
-    bottom: 0%;
-    transform: translate(0%, 0%);
-    width: 100%;
-    padding-bottom: 45%;
-    background-color: red;
-    z-index: -1; */
-  }
-
-  .stat-value-center {
-    text-align: center;
-  }
-
-  .f-card-box-item {
-    margin-bottom: 35px;
-  }
-
-  .banner-box {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    gap: 50px;
-  }
-
-  .banner-text {
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 42px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .footer-box {
-    margin-top: 90px;
-    margin-bottom: 0px;
-  }
-
-  .social-icons {
-    justify-content: center;
-  }
 }
