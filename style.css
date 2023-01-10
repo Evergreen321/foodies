@@ -103,6 +103,7 @@ li {
   padding-bottom: 5px;
 }
 
+/* HEADER */
 .f-logo {
   font-weight: 500;
   font-size: 32px;
@@ -164,7 +165,6 @@ li {
   transform: translate(0px, -2px);
 }
 
-/* HEADER */
 .header-box {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -178,6 +178,7 @@ li {
   background-color: #fff;
 }
 
+/* HERO SECTION */
 .hero-box {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -228,7 +229,7 @@ li {
   right: -35px;
 }
 
-/* 
+/* alternative picture 
 .hero-img-box::after {
   content: url("img/Ratings.svg");
   position: absolute;
@@ -273,6 +274,7 @@ li {
   color: #06c167;
 }
 
+/* OUR BENEFIT SECTION */
 .benefit-header,
 .our-stars-header,
 .our-features-header,
@@ -304,6 +306,7 @@ li {
   padding-bottom: 0;
 }
 
+/* OUR STARS SECTION */
 .stat-box {
   display: flex;
   flex-direction: column;
@@ -326,6 +329,7 @@ li {
   color: rgba(29, 29, 31, 0.65);
 }
 
+/* OUR FEATURES SECTION */
 .our-features-header {
   text-align: center;
 }
@@ -360,6 +364,7 @@ li {
   text-decoration: none;
 }
 
+/* OUR PRODUCT SECTION */
 .f-card-box {
   border: 2px solid rgba(118, 118, 117, 0.25);
   padding: 22px 25px;
@@ -416,6 +421,7 @@ li {
   text-decoration: none;
 }
 
+/* BANNER SECTION */
 .banner-box {
   padding-top: 90px;
   padding-bottom: 90px;
